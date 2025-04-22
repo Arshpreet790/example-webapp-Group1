@@ -14,3 +14,5 @@ EXPOSE 3000
 CMD ["node", "server.js"]
 
 ##testing
+FROM nginx:alpine
+COPY . /usr/share/nginx/html
